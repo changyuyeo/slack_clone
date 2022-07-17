@@ -1,6 +1,11 @@
 # Slack Clone
 
-## mysql docker-compose 로 구성하기
+Slack Clone
+<br />
+
+## 🐳 docker setup
+
+### mysql docker-compose 로 구성하기
 
 mysql 8 docker image
 
@@ -38,9 +43,11 @@ docker exec -it {container_name} bash
 docker ps
 ```
 
-## setting
+<br />
 
-clone 후 git hook이 정상적으로 동작하지 않는다면 다음 명령어 실행
+## ⚙️ setting
+
+### clone 후 git hook이 정상적으로 동작하지 않는다면 다음 명령어 실행
 
 ```
 chmod +x .husky/pre-commit
