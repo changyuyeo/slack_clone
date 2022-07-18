@@ -25,7 +25,7 @@
     "server": "yarn workspace slack_server start:dev",
     "prepare": "husky install",
     "commit": "git add . && yarn git-cz",
-    "clean": "./scripts/clean-node-modules.sh"
+    "clean": "bash ./scripts/clean-node-modules.sh"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
