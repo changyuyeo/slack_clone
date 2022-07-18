@@ -1,28 +1,28 @@
 {
   "name": "slack_clone",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/changyuyeo/slack_clone",
   "author": "changyuyeo <wry5533@gmail.com>",
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "slack_client",
+    "slack_server"
   ],
   "lint-staged": {
-		"**/*.{ts,tsx}": [
+    "**/*.{ts,tsx}": [
       "eslint --fix",
       "prettier --write",
       "git add ."
-		]
-	},
+    ]
+  },
   "config": {
-		"commitizen": {
-			"path": "cz-conventional-changelog"
-		}
-	},
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "scripts": {
-    "dev": "yarn workspace dev",
+    "server": "yarn workspace slack_server start:dev",
     "prepare": "husky install",
     "commit": "git add . && yarn git-cz",
     "clean": "./scripts/clean-node-modules.sh"
@@ -35,6 +35,7 @@
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",

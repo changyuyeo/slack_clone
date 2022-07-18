@@ -1,9 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "build",
-    "module": "esnext",
-    "lib": ["DOM", "ESNext"],
-    "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "target": "esnext",
     "noImplicitAny": true,

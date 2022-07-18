@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "incremental": true,
+    "skipLibCheck": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "baseUrl": "./",
+    "paths": {
+      "@comments/*": ["./src/comments/*"],
+      "@common/*": ["./src/common/*"],
+      "@debatePosts/*": ["./src/debate-posts/*"],
+      "@posts/*": ["./src/posts/*"],
+      "@typings/*": ["./src/typings/*"],
+      "@users/*": ["./src/users/*"],
+      "@src/*": ["./src/*"]
+    }
+  },
+  "extends": "../tsconfig.json"
+}
