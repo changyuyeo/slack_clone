@@ -1,14 +1,13 @@
-import { MiddlewareConsumer, NestModule } from '@nestjs/common';
-import { Module } from '@nestjs/common';
+import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 
-import { AppController } from '@src/app.controller';
-import { AppService } from '@src/app.service';
 import { ChannelsModule } from '@channels/channels.module';
+import { LoggerMiddleware } from '@common/middlewares/logger.middleware';
 import { DmsModule } from '@dms/dms.module';
-import { LoggerMiddleware } from '@middlewares/logger.middleware';
 import { UsersModule } from '@users/users.module';
 import { WorkspacesModule } from '@workspaces/workspaces.module';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [

@@ -1,9 +1,9 @@
-# Slack Clone
+# Slack 클론 코딩 (react + nestjs)
 
 - [client-repo](https://github.com/changyuyeo/slack_clone/tree/master/slack_client)
 - [server-repo](https://github.com/changyuyeo/slack_clone/tree/master/slack_server)
 
-<br /><br />
+<br />
 
 ## 🐳 docker setup
 
@@ -54,8 +54,6 @@ docker ps
 ```
 chmod +x .husky/pre-commit
 ```
-
-<br />
 
 ### .env 구성
 

@@ -14,8 +14,8 @@
     "baseUrl": "./",
     "paths": {
       "@channels/*": ["./src/channels/*"],
+      "@common/*": ["./src/common/*"],
       "@dms/*": ["./src/dms/*"],
-      "@middlewares/*": ["./src/middlewares/*"],
       "@users/*": ["./src/users/*"],
       "@workspaces/*": ["./src/workspaces/*"],
       "@src/*": ["./src/*"]
