@@ -1,7 +1,9 @@
 # Slack Clone
 
-Slack Clone
-<br />
+- [client-repo](https://github.com/changyuyeo/slack_clone/tree/master/slack_client)
+- [server-repo](https://github.com/changyuyeo/slack_clone/tree/master/slack_server)
+
+<br /><br />
 
 ## 🐳 docker setup
 
@@ -51,4 +53,12 @@ docker ps
 
 ```
 chmod +x .husky/pre-commit
+```
+
+<br />
+
+### .env 구성
+
+```
+PORT=...
 ```
