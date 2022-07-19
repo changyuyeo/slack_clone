@@ -1,8 +1,6 @@
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
-import { ApiTags } from '@nestjs/swagger';
 import { DmsService } from './dms.service';
 
-@ApiTags('dms')
 @Controller('workspaces/:workspace/dms')
 export class DmsController {
   constructor(private readonly dmsService: DmsService) {}

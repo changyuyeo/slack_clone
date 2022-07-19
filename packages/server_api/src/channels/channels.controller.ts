@@ -1,8 +1,6 @@
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
-import { ApiTags } from '@nestjs/swagger';
 import { ChannelsService } from './channels.service';
 
-@ApiTags('channels')
 @Controller('worksapces/:workspace/channels')
 export class ChannelsController {
   constructor(private readonly channelsService: ChannelsService) {}
