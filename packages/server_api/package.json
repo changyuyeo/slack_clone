@@ -1,5 +1,5 @@
 {
-  "name": "slack_server",
+  "name": "@slack/server_api",
   "version": "0.0.0",
   "private": true,
   "jest": {

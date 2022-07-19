@@ -1,5 +1,5 @@
 {
-  "extends": ["../.eslintrc.json"],
+  "extends": ["../../.eslintrc"],
   "plugins": ["@typescript-eslint/eslint-plugin"],
   "env": {
     "node": true,
