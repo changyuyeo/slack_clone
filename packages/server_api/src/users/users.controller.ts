@@ -10,6 +10,7 @@ export class UsersController {
 
   @Get()
   getUsers(@User() user: any) {
+    console.log(user);
     return 'getUsers';
   }
 

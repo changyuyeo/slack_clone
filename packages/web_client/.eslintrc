@@ -1,11 +1,11 @@
 {
   "extends": [
-    "../../.eslintrc",     
+    "../../.eslintrc",
     "airbnb-typescript",
     "plugin:import/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
+    "plugin:react-hooks/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -17,5 +17,8 @@
     "react": {
       "version": "detect"
     }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off"
   }
 }
