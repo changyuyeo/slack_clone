@@ -4,3 +4,4 @@
 **/dist
 **/.storybook
 **/*.d.ts
+**/*.config.ts
