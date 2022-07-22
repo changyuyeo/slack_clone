@@ -5,9 +5,15 @@
   "author": "changyuyeo <wry5533@gmail.com>",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/typeorm",
+      "**/typeorm-seeding"
+    ]
+  },
   "lint-staged": {
     "**/*.{ts,tsx}": [
       "eslint --fix",
